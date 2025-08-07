@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube</title>
+    <link rel="icon" href="img/youtube-logo.png" />
+    <link rel="stylesheet" href="style/bootstrap/css/bootstrap.css" />
+  </head>
+  <style>
+    p {
+      margin: 0;
+    }
+    .video-title {
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .channel-name,
+    .video-stats {
+      color: rgb(145, 145, 145);
+      font-size: 13px;
+    }
+    .side-bar {
+      height: 100vh;
+      width: 100px;
+      background-color: black;
+      position: fixed;
+      left: 0%;
+      top: 10%;
+    }
+    .nav-bar {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      width: 100%;
+      height: 10%;
+      top: 0%;
+      z-index: 999;
+    }
+    .search-bar {
+      width: 70%;
+      height: 60%;
+      color: grey;
+      background-color: rgba(0, 0, 0, 0.3);
+      border: solid;
+      border-color: grey;
+      font-size: 18px;
+      border-width: 1px;
+      border-radius: 20px;
+      padding-left: 20px;
+    }
+    .search-bar-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .search-button {
+      height: 100%;
+    }
+    .home-icon, .shorts-icon, .subscription-icon, .you-icon, .downloads-icon{
+      color: white;
+      text-align: center;
+      align-content: center;
+      font-size: 12px;
+      margin-top: 20px;
+    }
+    .side-bar-content{
+      width: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 20px;
+    }
+  </style>
+  <body style="background-color: black; padding: 0;">
+    <div class="container-fluid">
+      <div class="nav-bar" style="background-color: rgba(0, 0, 0, 0.9);">
+        <div class="row" style="height: 100%">
+          <div class="col-3">
+            <div class="card" style="background-color: rgba(0, 0, 0, 0); height: 100%; border: none;">
+              <div class="row" style="align-items: center; color: white">
+                <div class="card-image col-2">
+                  <img src="img/1753005039286.png" width="100%" alt=""/>
+                </div>
+                <div class="card-content col-10">
+                  <h1>YouTube</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="search-bar-container">
+              <input type="search" class="search-bar" placeholder="Search" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3"></div>
+    </div>
+    <div class="container-fluid">
+      <div class="row ml-5">
+        <div class="side-bar col-4">
+          <div class="side-bar-content">
+            <div class="home-icon">
+              <img src="img/icons/png-clipart-computer-icons-house-home-font-awesome-house-angle-building-thumbnail.png" alt="" width="100%" style="border-radius: 40px;">
+              <span>Home</span>
+            </div>
+            <div class="shorts-icon">
+              <img src="img/icons/youtube-shorts.png" alt="" width="100%" style="border-radius: 40px;">
+              <span>Shorts</span>
+            </div>
+            <div class="subscription-icon">
+              <img src="img/icons/youtube-subscription-icon-lg.png" alt="" width="100%" style="border-radius: 40px;">
+              <span>Subciption</span>
+            </div>
+            <div class="you-icon">
+              <img src="img/icons/profile-png.png" alt="" width="100%" style="border-radius: 40px;">
+              <span>You</span>
+            </div>
+            <div class="downloads-icon">
+              <img src="img/icons/download-white-icon-button-png-701751694964958qjkurnoj9k.png" alt="" width="100%" style="border-radius: 40px;">
+              <span>Downloads</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="card p-1"
+            style="background-color: rgba(0, 0, 0, 0); border: none"
+          >
+            <div class="card-image">
+              <a href="https://www.youtube.com/watch?v=SNufa24dBjs&pp=ygUVMjAgc2luZ2xlcyBzcGVlZCBkYXRl0gcJCc0JAYcqIYzv" target="_blank">
+                <img src="img/thumbnails/hq720.avif" alt="" width="100%" />
+              </a>
+            </div>
+            <div class="card-content pt-2">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="img/profilePictue/channels4_profile.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="col-10 p-0">
+                  <div class="video-title">
+                    <span>20 Singles SPEED DATE Over a Buzzer</span>
+                  </div>
+                  <div class="channel-name">
+                    <span>Cruise</span>
+                  </div>
+                  <div class="video-stats">
+                    <span>125k views &#x2022; 9 days ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 g-3">
+          <div
+            class="card p-1"
+            style="background-color: rgba(0, 0, 0, 0); border: none"
+          >
+            <div class="card-image">
+              <a href="https://www.youtube.com/watch?v=wmLGG5DYDWQ&list=RDwmLGG5DYDWQ&start_radio=1" target="_blank">
+                <img src="img/thumbnails/hq720 (1).avif" alt="" width="100%" />
+              </a>
+            </div>
+            <div class="card-content pt-2">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="img/profilePictue/channels4_profile.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="col-10 p-0">
+                  <div class="video-title">
+                    <span>Cigarettes After Sex Late Night Drive Songs</span>
+                  </div>
+                  <div class="channel-name">
+                    <span>Cruise</span>
+                  </div>
+                  <div class="video-stats">
+                    <span>125k views &#x2022; 9 days ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="card p-1"
+            style="background-color: rgba(0, 0, 0, 0); border: none"
+          >
+            <div class="card-image">
+              <img src="img/thumbnails/hq720 (2).avif" alt="" width="100%" />
+            </div>
+            <div class="card-content pt-2">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="img/profilePictue/channels4_profile.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="col-10 p-0">
+                  <div class="video-title">
+                    <span>The Dumbest Mansion Mistakes Ever!</span>
+                  </div>
+                  <div class="channel-name">
+                    <span>Arvin Haddad</span>
+                  </div>
+                  <div class="video-stats">
+                    <span>98k views &#x2022; 3 days ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ml-5">
+        <div class="col-lg-4">
+          <div
+            class="card p-1"
+            style="background-color: rgba(0, 0, 0, 0); border: none"
+          >
+            <div class="card-image">
+              <img src="img/thumbnails/hq720 (3).avif" alt="" width="100%" />
+            </div>
+            <div class="card-content pt-2">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="img/profilePictue/channels4_profile.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="col-10 p-0">
+                  <div class="video-title">
+                    <span>Why It's So Easy to Get Addicted to Something</span>
+                  </div>
+                  <div class="channel-name">
+                    <span>Theo Von Clips</span>
+                  </div>
+                  <div class="video-stats">
+                    <span>433k views &#x2022; 1 month ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="card p-1"
+            style="background-color: rgba(0, 0, 0, 0); border: none"
+          >
+            <div class="card-image">
+              <img src="img/thumbnails/hq720 (4).avif" alt="" width="100%" />
+            </div>
+            <div class="card-content pt-2">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="img/profilePictue/channels4_profile.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="col-10 p-0">
+                  <div class="video-title">
+                    <span
+                      >Snapdragon X Elite vs Apple M4 - Are Macbooks still worth
+                      it?</span
+                    >
+                  </div>
+                  <div class="channel-name">
+                    <span>Cruise</span>
+                  </div>
+                  <div class="video-stats">
+                    <span>125k views &#x2022; 9 days ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="card p-1"
+            style="background-color: rgba(0, 0, 0, 0); border: none"
+          >
+            <div class="card-image">
+              <img src="img/thumbnails/hq720 (5).avif" alt="" width="100%" />
+            </div>
+            <div class="card-content pt-2">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="img/profilePictue/channels4_profile.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="col-10 p-0">
+                  <div class="video-title">
+                    <span
+                      >Survive 100 Days Trapped In A Private Jet, Keep It</span
+                    >
+                  </div>
+                  <div class="channel-name">
+                    <span>MrBeast</span>
+                  </div>
+                  <div class="video-stats">
+                    <span>14M views &#x2022; 4 hours ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ml-5">
+        <div class="col-lg-4">
+          <div
+            class="card p-1"
+            style="background-color: rgba(0, 0, 0, 0); border: none"
+          >
+            <div class="card-image">
+              <img src="img/thumbnails/hq720 (6).avif" alt="" width="100%" />
+            </div>
+            <div class="card-content pt-2">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="img/profilePictue/channels4_profile.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="col-10 p-0">
+                  <div class="video-title">
+                    <span>HE WON.</span>
+                  </div>
+                  <div class="channel-name">
+                    <span>Gotham Chess</span>
+                  </div>
+                  <div class="video-stats">
+                    <span>212k views &#x2022; 18 hours ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="card p-1"
+            style="background-color: rgba(0, 0, 0, 0); border: none"
+          >
+            <div class="card-image">
+              <img src="img/thumbnails/hq720 (7).avif" alt="" width="100%" />
+            </div>
+            <div class="card-content pt-2">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="img/profilePictue/channels4_profile.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="col-10 p-0">
+                  <div class="video-title">
+                    <span>Formula 1, Explained for Rookies</span>
+                  </div>
+                  <div class="channel-name">
+                    <span>Cleo Abram</span>
+                  </div>
+                  <div class="video-stats">
+                    <span>4.2M views &#x2022; 3 years ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="card p-1"
+            style="background-color: rgba(0, 0, 0, 0); border: none"
+          >
+            <div class="card-image">
+              <img src="img/thumbnails/hq720 (8).avif" alt="" width="100%" />
+            </div>
+            <div class="card-content pt-2">
+              <div class="row">
+                <div class="col-2">
+                  <img
+                    src="img/profilePictue/channels4_profile.jpg"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+                <div class="col-10 p-0">
+                  <div class="video-title">
+                    <span>What Actually Matters in Your 20s</span>
+                  </div>
+                  <div class="channel-name">
+                    <span>Nischa</span>
+                  </div>
+                  <div class="video-stats">
+                    <span>137K views &#x2022; 13 days ago</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
