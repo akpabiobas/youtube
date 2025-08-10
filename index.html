@@ -26,11 +26,11 @@
     .main-page {
       padding-top: 30px;
     }
-    .nav-bar {
+    .navbar {
       position: fixed;
       width: 100%;
       background-color: rgba(0, 0, 0, 0.9);
-      height: 9%;
+      height: 56px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -44,12 +44,12 @@
       align-items: center;
     }
     .logo-container {
-      font-size: 35px;
+      font-size: 1.5rem;
     }
     .side-bar {
       position: fixed;
       height: 100vh;
-      width: 90px;
+      width: 6%;
       top: 7.8%;
       background-color: black;
       display: flex;
@@ -106,7 +106,7 @@
     .create,
     .notification,
     .user-profile-picture {
-      margin-right: 32px;
+      margin-right: auto;
     }
     .navicon {
       margin-left: 30px;
@@ -117,7 +117,6 @@
     .youtube-text {
       display: flex;
       align-items: center;
-      font-size: 25px;
     }
     .web-content {
       display: flex;
@@ -154,7 +153,7 @@
       margin-left: 20px;
     }
     .superscript {
-      font-size: 10px;
+      font-size: 0.7rem;
     }
     .ellipsis {
       border: none;
@@ -173,87 +172,95 @@
     }
   </style>
   <body>
-    <div class="nav-bar">
-      <div class="logo-container">
-        <div class="navicon" style="margin-left: 10px; margin-right: 5px">
-          `
-          <button class="navicon-button">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-          </button>
-        </div>
-        <div class="youtube-text">
-          <i class="fa fa-youtube-play youtube-icon" aria-hidden="true"></i>
-          <span class="youtube">YouTube <sup class="superscript">NG</sup></span>
+    <nav class="navbar navbar-expand-lg ">
+      <a class="navbar-brand logo-container" href="#">
+        <i class="fa fa-youtube-play youtube-icon" aria-hidden="true"></i>
+        <span class="youtube">YouTube <sup class="superscript">NG</sup></span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <div class="search-bar">
+              <input
+                placeholder="Search"
+                type="search"
+                style="
+                  width: 400px;
+                  height: 40px;
+                  color: grey;
+                  background-color: rgba(27, 27, 27, 0.7);
+                  border: none;
+                  border-color: grey;
+                  font-size: 18px;
+                  border-width: 1px;
+                  border-top-left-radius: 20px;
+                  border-bottom-left-radius: 20px;
+                  padding-left: 20px;
+                "
+              />
+              <button class="search-button">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+              <div>
+                <button class="mic-button">
+                  <i class="fa fa-microphone" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="navbar-text right-nav">
+          <div class="create">
+            <button class="create-button" style="margin-right: 30px;">
+              <span>
+                <svg
+                  height="24"
+                  width="24"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0 0h24v24H0z" fill="none"></path>
+                  <path
+                    d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                Create
+              </span>
+            </button>
+          </div>
+          <div class="notification" style="position: relative; margin-right: 30px;">
+            <i
+              class="fa fa-bell-o"
+              aria-hidden="true"
+              style="color: white; font-size: 20px"
+            ></i>
+            <span class="notification-badge"> 9+ </span>
+          </div>
+          <div class="user-profile-picture" style="margin-right: 30px;">
+            <i
+              class="fa fa-user-circle"
+              aria-hidden="true"
+              style="font-size: 23px; color: white"
+            ></i>
+          </div>
         </div>
       </div>
-      <div class="search-bar">
-        <input
-          placeholder="Search"
-          type="search"
-          style="
-            width: 400px;
-            height: 40px;
-            color: grey;
-            background-color: rgba(27, 27, 27, 0.7);
-            border: none;
-            border-color: grey;
-            font-size: 18px;
-            border-width: 1px;
-            border-top-left-radius: 20px;
-            border-bottom-left-radius: 20px;
-            padding-left: 20px;
-          "
-        />
-        <button class="search-button">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-        <div>
-          <button class="mic-button">
-            <i class="fa fa-microphone" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class="right-nav">
-        <div class="create">
-          <button class="create-button">
-            <span>
-              <svg
-                height="24"
-                width="24"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M0 0h24v24H0z" fill="none"></path>
-                <path
-                  d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"
-                  fill="currentColor"
-                ></path>
-              </svg>
-              Create
-            </span>
-          </button>
-        </div>
-        <div class="notification" style="position: relative">
-          <i
-            class="fa fa-bell-o"
-            aria-hidden="true"
-            style="color: white; font-size: 20px"
-          ></i>
-          <span class="notification-badge"> 9+ </span>
-        </div>
-        <div class="user-profile-picture">
-          <i
-            class="fa fa-user-circle"
-            aria-hidden="true"
-            style="font-size: 23px; color: white"
-          ></i>
-        </div>
-      </div>
-    </div>
+    </nav>
     <div class="web-content">
       <div class="row">
-        <div class="col-1">
+        <div class="col-1 d-none d-sm-block">
           <div class="side-bar">
             <div class="home-icon-container">
               <i
@@ -297,7 +304,7 @@
             </div>
           </div>
         </div>
-        <div class="col-11">
+        <div class="col-11 ">
           <div class="main-page">
             <div class="container-fluid pt-5">
               <div class="row">
@@ -819,5 +826,15 @@
         </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
